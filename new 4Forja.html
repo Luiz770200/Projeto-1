@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head lang="pt-br">
+     <meta charset="UTF-8">
+	 <title>Mapas interativos</title>
+	 <link rel="shortcut icon" href="imagem/Untitled 09-30-2020 06-12-28 (1).png" type="image/png">
+	 <link rel="stylesheet" href="css/estilo.css">
+	 <link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	 <link href = 'https://fonts.googleapis.com/css?family=Opem+Sans' rel='stylesheet' type='text/css'>
+ </head>
+ <body>
+     <header class="cabecalho">
+		 <h1 class="logo">
+			 <a href="new 1Home.html" title="home">Mapa +</a>
+		 </h1>
+		 <form method="POST">
+			 <input type="text" placeholder="faça uma busca">
+			 <buttom><i class="fa fa-search fa-lg" hidden="true"></i></buttom>
+		 </form>
+	 </header>
+	 <nav class="menu">
+		 <ul>
+			 <li><a href="new 1Home.html">Home</a></li>
+			 <li><a href="new 2Mapas.html">Mapas</a></li>
+			 <li><a href="new 3Fichas.html">Fichas</a></li>
+			 <li><a href="new 4Forja.html">Forja</a></li>
+		 </ul>
+		 <div class="social-icons">
+			 <a href="" class="btn-facebook"><i class="fa fa-facebook-square" hidden="true"></i></a>
+			 <a href="" class="btn-whatsapp"><i class="fa fa-whatsapp" hidden="true"></i></a>
+			 <a href="" class="btn-google"><i class="fa fa-google" hidden="true"></i></a>
+		 </div>
+	 </nav>
+	 <main class="principal">
+		 <div class="sobre">
+			<img src="imagem/icom.jpg" title="Space ring" alt="Mapa Space ring">
+		 </div>
+		 <aside id="onde-estou">
+			 <h2 id="text">Interaja!....</h2>
+		</aside>
+	</main>
+		<script>
+            var a = window.document.getElementById('onde-estou')
+            var a = window.document.getElementById('text')
+
+            a.addEventListener('click',clicar)
+            a.addEventListener('mouseenter',entrar)
+            a.addEventListener('mouseout',sair)
+
+            function clicar(){
+                a.innerText = 'Clicou!'
+                a.style.background = 'red'
+            }
+            function entrar(){
+               
+                a.innerText = 'Entrou!'
+            }
+            function sair(){
+                a.innerText = 'saiu!'
+                a.style.background = 'green'
+            }
+        </script>
+		<footer class="rodape">
+			<p> © Mapas+ - todos os direitos reservados. </p>
+		</footer>
+ </body>
+</html>
